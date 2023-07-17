@@ -9,7 +9,6 @@
 int main(void)
 {
 	int i, j;
-	int first_digit, last_digit;
 
 	for (i = 0; i < 99; i++)
 	{
