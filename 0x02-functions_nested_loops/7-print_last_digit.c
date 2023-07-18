@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
-* print_last_digit - prints last digit of an number n
-* @n: The number to get the last digit from
-*
-* Return: last digit of n
-*/
+ * print_last_digit - print last digit of number n
+ * @n: number to get last digit from
+ *
+ * Return: integer, last digit of n
+ */
 int print_last_digit(int n)
 {
 	int last_digit;
@@ -16,11 +15,11 @@ int print_last_digit(int n)
 }
 
 /**
-* _abs - calculate absolute value of an integer n
-* @n: integer value to compute
-*
-* Return: absolute value of integer n
-*/
+ * _abs - get absolute value of number n
+ * @n: input
+ *
+ * Return: integer
+ */
 int _abs(int n)
 {
 	if (n < 0)
