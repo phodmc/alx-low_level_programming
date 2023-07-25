@@ -10,7 +10,7 @@ void print_rev(char *s)
 	int str_len;
 
 	str_len = _strlen(s);
-	for (; str_len > 0; str_len--)
+	for (str_len--; str_len > 0; str_len--)
 	{
 		_putchar(*(s + str_len));
 	}
