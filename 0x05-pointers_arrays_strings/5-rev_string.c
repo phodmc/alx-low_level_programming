@@ -8,24 +8,23 @@
 void rev_string(char *s)
 {
 	int size = _strlen(s);
-	int i, j;
-	char temp[size];
+	int start, end
 
-	i = 0;
-	while (size > 0)
-	{
-		temp[i] = s[size - 1];
-		size--;
-		i++;
-	}
+	start = 0;
+	end = size - 1;
 
-	j = 0;
-	while (j < i)
+	while (start < end)
 	{
-		s[j] = temp[j];
-		j++;
+		char temp = str[start];
+
+		str[left] = str[right];
+		str[right] = temp;
+
+		start++;
+		end--;
 	}
 }
+
 /**
 * _strlen - returns length of string s
 * @s: char pointer variable
