@@ -7,7 +7,7 @@
 * Return: int - lenght of string s
 */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int counter;
 
