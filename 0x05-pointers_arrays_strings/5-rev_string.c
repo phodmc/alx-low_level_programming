@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int size = _strlen(s);
-	int start, end
+	int start, end;
 
 	start = 0;
 	end = size - 1;
@@ -17,8 +17,8 @@ void rev_string(char *s)
 	{
 		char temp = str[start];
 
-		str[left] = str[right];
-		str[right] = temp;
+		str[start] = str[end];
+		str[end] = temp;
 
 		start++;
 		end--;
