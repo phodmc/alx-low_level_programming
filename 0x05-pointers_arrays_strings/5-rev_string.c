@@ -20,12 +20,12 @@ void rev_string(char *s)
 	}
 
 	j = 0;
-	while( j < i)
+	while (j < i)
 	{
 		s[j] = temp[j];
 		j++;
-	}	
-}	
+	}
+}
 /**
 * _strlen - returns length of string s
 * @s: char pointer variable
@@ -46,4 +46,3 @@ int _strlen(char *s)
 
 	return (counter);
 }
-
