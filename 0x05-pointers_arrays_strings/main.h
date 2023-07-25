@@ -5,5 +5,6 @@
 
 /* function prototypes */
 int _putchar(char c);
-int reset_void_98(int *n);
+void reset_void_98(int *n);
+void swap_int(int *a, int *b);
 #endif
