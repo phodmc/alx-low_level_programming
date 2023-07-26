@@ -24,23 +24,15 @@ char *_strncat(char *dest, char *src, int n)
 		dest_end++;
 	}
 
-	if (size < n)
+	for (; src_start < n; src_start++)
 	{
-		while (src[src_start] != '\0')
-		{
-			dest[dest_end] = src[src_start]
-			dest_end++;
-			src_start++;
-		}
+		dest[dest_end] = src[src_start];
+		dest_end++;
 
-		dest[dest_end] = '\0';
-	}
-	else
-	{
-		for (; src_start < n; src_start++)
+		if (src_start + 1 == size)
 		{
-			dest[dest_end] = src[src_start];
-			dest_end++;
+			dest[dest_end] = '\0';
+			break;
 		}
 	}
 
