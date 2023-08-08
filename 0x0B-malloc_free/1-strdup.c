@@ -10,12 +10,13 @@
 char *_strdup(char *str)
 {
 	char *dup;
-	int i;
+	int i, len;
 
 	if (!str)
 		return (NULL);
 
-	dup = malloc(*str);
+	len = _strlen(str);
+	dup = malloc(len + 1);
 	i = 0;
 
 	if (!dup)
@@ -26,4 +27,25 @@ char *_strdup(char *str)
 
 	dup[i] = '\0';
 	return (dup);
+}
+
+/**
+ * _strlen - return the length of string s
+ * @s: string
+ *
+ * Return: int, length of string s
+ */
+
+int _strlen(char *s)
+{
+	int counter;
+
+	counter = 0;
+
+	while (*(s + counter) != '\0')
+	{
+		counter++;
+	}
+
+	return (counter);
 }
