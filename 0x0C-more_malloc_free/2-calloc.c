@@ -20,7 +20,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	total = nmemb * size;
 	array = malloc(total);
 	byte_ptr = (char *)array;
-
 	for (i = 0; i < total; i++)
 		byte_ptr[i] = 0;
 
