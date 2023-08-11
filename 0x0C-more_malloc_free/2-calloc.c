@@ -18,7 +18,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	total = nmemb * size;
+
 	array = malloc(total);
+	if (!array)
+		return (NULL);
+
 	byte_ptr = (char *)array;
 	for (i = 0; i < total; i++)
 		byte_ptr[i] = 0;
