@@ -20,7 +20,7 @@ struct dog
 };
 
 /* type definitions */
-typedef struct dog dog_t
+typedef struct dog dog_t;
 
 /* function prototypes */
 void init_dog(struct dog *d, char *name, float age, char *owner);
